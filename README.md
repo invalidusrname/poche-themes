@@ -19,6 +19,10 @@ define ('THEME', 'dark');
 
 That's all ! 
 
+## create a theme
+
+Just have a look to this short documentation : http://inthepoche.com/?pages/Cr%C3%A9er-un-th%C3%A8me-pour-poche
+
 ## send a theme
 
 Send your theme by email at support@inthepoche.com.
