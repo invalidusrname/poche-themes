@@ -2,6 +2,12 @@
 
 themes created by poche users
 
+## list of themes
+
+dark : https://raw.github.com/inthepoche/poche-themes/master/dark/screenshot.jpg
+
+dmagenta : https://raw.github.com/inthepoche/poche-themes/master/dmagenta/screenshot.jpg
+
 ## installation
 Take a theme folder, by example, the dark one and copy / paste it in ./tpl folder of your poche. 
 
