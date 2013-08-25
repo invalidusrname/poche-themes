@@ -26,6 +26,25 @@
                 <li>{% trans "latest stable version" %} : {{ prod }}. {% if compare_prod == -1 %}<strong><a href="http://inthepoche.com/?pages/T%C3%A9l%C3%A9charger-poche">{% trans "a more recent stable version is available." %}</a></strong>{% else %}{% trans "you are up to date." %}{% endif %}</li>
                 {% if constant('DEBUG_POCHE') == 1 %}<li>{% trans "latest dev version" %} : {{ dev }}. {% if compare_dev == -1 %}<strong><a href="http://inthepoche.com/?pages/T%C3%A9l%C3%A9charger-poche">{% trans "a more recent development version is available." %}</a></strong>{% else %}{% trans "you are up to date." %}{% endif %}</li>{% endif %}
             </ul>
+            
+            <h2>{% trans "Change your theme" %}</h2>
+            <form method="post" action="?updatetheme" name="changethemeform">
+                <fieldset class="w500p">
+                    <div class="row">
+                        <label class="col w150p" for="password">{% trans "Theme:" %}</label>
+                        <select class="col" name="theme">
+                            {% for theme in themes %}
+                            <option value="{{ theme.name }}" {{ theme.current ? 'selected' : '' }}>{{ theme.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="row mts txtcenter">
+                        <button class="bouton" type="submit" tabindex="4">{% trans "Update" %}</button>
+                    </div>
+                </fieldset>
+                <input type="hidden" name="returnurl" value="{{ referer }}">
+                <input type="hidden" name="token" value="{{ token }}">
+            </form>
 
             <h2>{% trans "Change your password" %}</h2>
             <form method="post" action="?config" name="loginform">
@@ -50,9 +69,9 @@
             <p>{% trans "Please execute the import script locally, it can take a very long time." %}</p>
             <p>{% trans "More infos in the official doc:" %} <a href="http://inthepoche.com/?pages/Documentation">inthepoche.com</a></p>
             <ul>
-                <li><a href="./?import&from=pocket">{% trans "import from Pocket" %}</a> (you must have a "{{ defined('IMPORT_POCKET_FILE') ? constant('IMPORT_POCKET_FILE') ? 'INCORRECT CONFIGURATION' }}" file on your server)</li>
-            <li><a href="./?import&from=readability">{% trans "import from Readability" %}</a> (you must have a "{{ defined('IMPORT_READABILITY_FILE') ? constant('IMPORT_READABILITY_FILE') ? 'INCORRECT CONFIGURATION' }}" file on your server)</li>
-            <li><a href="./?import&from=instapaper">{% trans "import from Instapaper" %}</a> (you must have a "{{ defined('IMPORT_INSTAPAPER_FILE') ? constant('IMPORT_INSTAPAPER_FILE') ? 'INCORRECT CONFIGURATION' }}" file on your server)</li>
+                <li><a href="./?import&from=pocket">{% trans "import from Pocket" %}</a> (you must have a "{{ constant('IMPORT_POCKET_FILE')|getPrettyFilename }}" file on your server)</li>
+                <li><a href="./?import&from=readability">{% trans "import from Readability" %}</a> (you must have a "{{ constant('IMPORT_READABILITY_FILE')|getPrettyFilename  }}" file on your server)</li>
+                <li><a href="./?import&from=instapaper">{% trans "import from Instapaper" %}</a> (you must have a "{{ constant('IMPORT_INSTAPAPER_FILE')|getPrettyFilename }}" file on your server)</li>
             </ul>
 
             <h2>{% trans "Export your poche datas" %}</h2>
