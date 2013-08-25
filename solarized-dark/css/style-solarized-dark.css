@@ -134,13 +134,22 @@ footer a {
 
 #login,
 #password,
-#password_repeat {
+#password_repeat,
+#bookmarklet,
+.top_link {
+    background-color: #073642;
+}
+#login,
+#password,
+#password_repeat,
+#bookmarklet {
     border: 1px solid #586e75;
     padding: 5px;
-    background-color: #073642;
     color: #839496;
 }
-
+#bookmarklet {
+    border-style: dashed;
+}
 
 .pagination a {
     border-color: #586e75;
