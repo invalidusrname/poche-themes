@@ -28,7 +28,7 @@ That's all !
 
 ## create a theme
 
-Just have a look to this short documentation : http://inthepoche.com/?pages/Cr%C3%A9er-un-th%C3%A8me-pour-poche
+Just have a look to this short documentation : http://inthepoche.com/doc/doku.php?id=designers:creating_theme
 
 ## send a theme
 
