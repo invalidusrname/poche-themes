@@ -53,6 +53,10 @@ a.twitter span {
     background: url('../img/dark/twitter.png') no-repeat;
 }
 
+a.flattr span {
+    background: url('../img/dark/flattr.png') no-repeat;
+}
+
 a.email span {
     background: url('../img/dark/envelop.png') no-repeat;
 }

@@ -175,6 +175,7 @@ a.archive span:hover,
 a.archive-off span,
 a.archive-off span:hover,
 a.twitter span,
+a.flattr span,
 a.email span,
 a.delete span {
     background-repeat: no-repeat;
@@ -218,6 +219,10 @@ a.archive-off span:hover {
 
 a.twitter span {
     background-image: url('../img/solarized/twitter.png');
+}
+
+a.flattr span {
+    background: url('../img/solarized/flattr.png');
 }
 
 a.email span {
