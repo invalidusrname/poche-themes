@@ -9,60 +9,56 @@ a, a:hover, a:visited {
 }
 
 a.back span {
-    background: url('../img/dmagenta/left.png') no-repeat;
+    background: url('../img/dmagenta/left.png');
 }
 
 a.top span {
-    background: url('../img/dmagenta/top.png') no-repeat;
+    background: url('../img/dmagenta/top.png');
 }
 
 
 a.fav span {
-    background: url('../img/dmagenta/star-on.png') no-repeat;
+    background: url('../img/dmagenta/star-on.png');
 }
-
 a.fav span:hover {
-    background: url('../img/dmagenta/star-off.png') no-repeat;
+    background: url('../img/dmagenta/star-off.png');
 }
 
 a.fav-off span {
-    background: url('../img/dmagenta/star-off.png') no-repeat;
+    background: url('../img/dmagenta/star-off.png');
 }
-
 a.fav-off span:hover {
-    background: url('../img/dmagenta/star-on.png') no-repeat;
+    background: url('../img/dmagenta/star-on.png');
 }
 
 a.archive span {
-    background: url('../img/dmagenta/checkmark-on.png') no-repeat;
+    background: url('../img/dmagenta/checkmark-on.png');
 }
-
 a.archive span:hover {
-    background: url('../img/dmagenta/checkmark-off.png') no-repeat;
+    background: url('../img/dmagenta/checkmark-off.png');
 }
 
 a.archive-off span {
-    background: url('../img/dmagenta/checkmark-off.png') no-repeat;
+    background: url('../img/dmagenta/checkmark-off.png');
 }
-
 a.archive-off span:hover {
-    background: url('../img/dmagenta/checkmark-on.png') no-repeat;
+    background: url('../img/dmagenta/checkmark-on.png');
 }
 
 a.twitter span {
-    background: url('../img/dmagenta/twitter.png') no-repeat;
+    background: url('../img/dmagenta/twitter.png');
 }
 
 a.flattr span {
-    background: url('../img/dmagenta/flattr.png') no-repeat;
+    background: url('../img/dmagenta/flattr.png');
 }
 
 a.email span {
-    background: url('../img/dmagenta/envelop.png') no-repeat;
+    background: url('../img/dmagenta/envelop.png');
 }
 
 a.delete span {
-    background: url('../img/dmagenta/remove.png') no-repeat;
+    background: url('../img/dmagenta/remove.png');
 }
 
 .pagination a {
