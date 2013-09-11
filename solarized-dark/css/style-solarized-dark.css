@@ -163,22 +163,6 @@ footer a {
 
 /* Images */
 
-a.back span,
-a.top span,
-a.fav span,
-a.fav span:hover,
-a.fav-off span,
-a.fav-off span:hover,
-a.archive span,
-a.archive span:hover,
-a.archive-off span,
-a.archive-off span:hover,
-a.twitter span,
-a.email span,
-a.delete span {
-    background-repeat: no-repeat;
-}
-
 a.back span {
     background-image: url('../img/solarized-dark/left.png');
 }
@@ -217,6 +201,10 @@ a.archive-off span:hover {
 
 a.twitter span {
     background-image: url('../img/solarized-dark/twitter.png');
+}
+
+a.flattr span {
+    background: url('../img/solarized-dark/flattr.png');
 }
 
 a.email span {
