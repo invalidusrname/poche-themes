@@ -98,9 +98,17 @@ a, a:hover, a:visited {
 #main #content .entrie {
     border-bottom: 1px dashed #222;
 }
+/* First entry */
+#main #content .results + .entrie {
+    clear: both;
+}
 
 #main .entrie .tools {
     list-style-type: none;
+}
+
+#main .entrie .tools + p {
+    min-height: 5.5em;
 }
 
 /*
@@ -150,6 +158,11 @@ a, a:hover, a:visited {
 #article {
     margin: 0 auto;
 }
+
+#article header, #article article {
+    border-bottom: 1px solid #222;
+}
+
 #article header {
     text-align: left;
 }
@@ -180,19 +193,22 @@ a, a:hover, a:visited {
 }
 
 
-/*** ***/
-/*** ARTICLE PAGE ***/
-
-#article header, #article article {
-    border-bottom: 1px solid #222;
+.results {
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
+.nb-results {
+    float: left;
+    font-size: 0.9em;
+    line-height: 24px;
+    vertical-align: middle;
+}
 
 /* Pagination */
 .pagination {
-    clear: both;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    float: right;
     text-align: right;
 }
 .pagination a {
@@ -220,12 +236,28 @@ a, a:hover, a:visited {
     margin: 2px;
 }
 .pagination .disabled {
-    border: 1px solid #eee;
-    color: #ddd;
-    margin: 2px;
-    padding: 4px 8px;
-    font-size: 11px;
-    font-weight: bold;
+    display: none;
+}
+
+#bookmarklet {
+    padding: 5px;
+    border: 1px dashed #808080;
+    background: #fff;
+    cursor: move;
+}
+
+.top_link {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    padding: 20px;
+    background: #ccc;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    opacity: 0.9;
+    z-index: 2000;
 }
 
 footer {
@@ -234,4 +266,35 @@ footer {
 
 .reading-time {
     font-size: 0.8em;
+}
+
+#inputform {
+    display: none;
+    text-align: center;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0.8;
+    color: #fff;
+    border-radius: 3px;
+}
+
+a.back span,
+a.top span,
+a.fav span,
+a.fav span:hover,
+a.fav-off span,
+a.fav-off span:hover,
+a.archive span,
+a.archive span:hover,
+a.archive-off span,
+a.archive-off span:hover,
+a.twitter span,
+a.flattr span,
+a.email span,
+a.delete span {
+    background-repeat: no-repeat;
 }
