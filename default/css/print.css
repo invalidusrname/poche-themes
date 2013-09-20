@@ -1,3 +1,21 @@
+/* ### Layout ### */
+
+body {
+    background-color: #fff;
+    font-family: Serif;
+}
+
+@page {
+    margin: 1cm;
+}
+
+img {
+    max-width: 100% !important;
+}
+
+
+/* ### Content ### */
+
 /* Hide useless blocks */
 body > header,
 #links,
