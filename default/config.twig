@@ -32,8 +32,8 @@
             <form method="post" action="?updatetheme" name="changethemeform">
                 <fieldset class="w500p">
                     <div class="row">
-                        <label class="col w150p" for="password">{% trans "Theme:" %}</label>
-                        <select class="col" name="theme">
+                        <label class="col w150p" for="theme">{% trans "Theme:" %}</label>
+                        <select class="col" id="theme" name="theme">
                             {% for theme in themes %}
                             <option value="{{ theme.name }}" {{ theme.current ? 'selected' : '' }}>{{ theme.name }}</option>
                             {% endfor %}
@@ -70,9 +70,9 @@
             <p>{% trans "Please execute the import script locally, it can take a very long time." %}</p>
             <p>{% trans "More infos in the official doc:" %} <a href="http://inthepoche.com/doc">inthepoche.com</a></p>
             <ul>
-                <li><a href="./?import&from=pocket">{% trans "import from Pocket" %}</a> {{ '(you must have a %s file on your server)'|trans|format(constant('IMPORT_POCKET_FILE')) }}</li>
-            <li><a href="./?import&from=readability">{% trans "import from Readability" %}</a> {{ '(you must have a %s file on your server)'|trans|format(constant('IMPORT_READABILITY_FILE')) }}</li>
-            <li><a href="./?import&from=instapaper">{% trans "import from Instapaper" %}</a> {{ '(you must have a %s file on your server)'|trans|format(constant('IMPORT_INSTAPAPER_FILE')) }}</li>
+                <li><a href="./?import&amp;from=pocket">{% trans "import from Pocket" %}</a> {{ '(you must have a %s file on your server)'|trans|format(constant('IMPORT_POCKET_FILE')) }}</li>
+            <li><a href="./?import&amp;from=readability">{% trans "import from Readability" %}</a> {{ '(you must have a %s file on your server)'|trans|format(constant('IMPORT_READABILITY_FILE')) }}</li>
+            <li><a href="./?import&amp;from=instapaper">{% trans "import from Instapaper" %}</a> {{ '(you must have a %s file on your server)'|trans|format(constant('IMPORT_INSTAPAPER_FILE')) }}</li>
             </ul>
 
             <h2>{% trans "Export your poche datas" %}</h2>
