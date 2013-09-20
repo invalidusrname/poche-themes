@@ -10,19 +10,15 @@ themes created by poche users
 * solarized-dark ([preview](https://raw.github.com/inthepoche/poche-themes/master/solarized-dark/screenshot.jpg))
 
 ## installation
-Take a theme folder, by example, the dark one and copy / paste it in ./tpl folder of your poche. 
 
-Activate this theme by editing ./inc/poche/config.inc.ph. Replace this line : 
-
-```
-define ('THEME', 'light');
-```
-
-By this one : 
+In your poche folder:
 
 ```
-define ('THEME', 'dark');
+git submodule init
+git submodule update
 ```
+
+Then, in your config screen, select your favorite theme. 
 
 That's all ! 
 
