@@ -37,3 +37,8 @@ article {
 .vieworiginal a:after {
     content: " (" attr(href) ")";
 }
+
+/* Change border on current pager item */
+.pagination span.current {
+    border-style: dashed;
+}
