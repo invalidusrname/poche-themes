@@ -11,9 +11,8 @@ header div,
     display: none !important;
 }
 
-article
-{
-	border: none !important;
+article {
+    border: none !important;
 }
 
 div.vieworiginal a::after
