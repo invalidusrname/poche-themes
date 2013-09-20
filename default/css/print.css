@@ -1,10 +1,14 @@
+/* Hide useless blocks */
 body > header,
+#links,
+#sort,
 body > footer,
-a.top_link,
+.top_link,
 div.tools,
-header div
-{
-	display: none !important;
+header div,
+.messages,
+.entrie + .results {
+    display: none !important;
 }
 
 article
