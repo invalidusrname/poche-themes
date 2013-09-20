@@ -15,8 +15,7 @@ article {
     border: none !important;
 }
 
-div.vieworiginal a::after
-{
-	margin-left: 5px;
-	content: "("attr(href)")";
+/* Add URL after links */
+.vieworiginal a:after {
+    content: " (" attr(href) ")";
 }
