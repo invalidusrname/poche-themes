@@ -1,63 +1,10 @@
 body {
     background-color: #262627;
-    color:#D4D4D4;
-}
-
-
-a, a:hover, a:visited {
     color: #D4D4D4;
 }
 
-a.back span {
-    background: url('../img/dark/left.png');
-}
-
-a.top span {
-    background: url('../img/dark/top.png');
-}
-
-a.fav span {
-    background: url('../img/dark/star-on.png');
-}
-a.fav span:hover {
-    background: url('../img/dark/star-off.png');
-}
-
-a.fav-off span {
-    background: url('../img/dark/star-off.png');
-}
-a.fav-off span:hover {
-    background: url('../img/dark/star-on.png');
-}
-
-a.archive span {
-    background: url('../img/dark/checkmark-on.png');
-}
-a.archive span:hover {
-    background: url('../img/dark/checkmark-off.png');
-}
-
-a.archive-off span {
-    background: url('../img/dark/checkmark-off.png');
-}
-a.archive-off span:hover {
-    background: url('../img/dark/checkmark-on.png');
-}
-
-a.twitter span {
-    background: url('../img/dark/twitter.png');
-}
-
-a.flattr span {
-    background: url('../img/dark/flattr.png');
-}
-
-a.email span {
-    background: url('../img/dark/envelop.png');
-}
-
-a.delete span {
-    background: url('../img/dark/remove.png');
+a, a:hover, a:visited {
+    color: #D4D4D4;
 }
 
 .pagination a {

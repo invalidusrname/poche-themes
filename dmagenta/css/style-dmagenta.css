@@ -1,70 +1,15 @@
 body {
     background-color: #372D37;
-    color:#D4D4D4;
+    color: #D4D4D4;
 }
-
 
 a, a:hover, a:visited {
     color: #8d748d;
 }
 
-a.back span {
-    background: url('../img/dmagenta/left.png');
-}
-
-a.top span {
-    background: url('../img/dmagenta/top.png');
-}
-
-
-a.fav span {
-    background: url('../img/dmagenta/star-on.png');
-}
-a.fav span:hover {
-    background: url('../img/dmagenta/star-off.png');
-}
-
-a.fav-off span {
-    background: url('../img/dmagenta/star-off.png');
-}
-a.fav-off span:hover {
-    background: url('../img/dmagenta/star-on.png');
-}
-
-a.archive span {
-    background: url('../img/dmagenta/checkmark-on.png');
-}
-a.archive span:hover {
-    background: url('../img/dmagenta/checkmark-off.png');
-}
-
-a.archive-off span {
-    background: url('../img/dmagenta/checkmark-off.png');
-}
-a.archive-off span:hover {
-    background: url('../img/dmagenta/checkmark-on.png');
-}
-
-a.twitter span {
-    background: url('../img/dmagenta/twitter.png');
-}
-
-a.flattr span {
-    background: url('../img/dmagenta/flattr.png');
-}
-
-a.email span {
-    background: url('../img/dmagenta/envelop.png');
-}
-
-a.delete span {
-    background: url('../img/dmagenta/remove.png');
-}
-
 .pagination a {
     color: #aaa;
 }
-
 
 #main ul#links li a.current {
     background-color: #2d372d;
