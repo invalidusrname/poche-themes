@@ -1,19 +1,49 @@
+/* ### Layout ### */
+
+body {
+    background-color: #fff;
+    font-family: Serif;
+}
+
+@page {
+    margin: 1cm;
+}
+
+img {
+    max-width: 100% !important;
+}
+
+
+/* ### Content ### */
+
+/* Hide useless blocks */
 body > header,
+#links,
+#sort,
 body > footer,
-a.top_link,
+.top_link,
 div.tools,
-header div
-{
-	display: none !important;
+header div,
+.messages,
+.entrie + .results {
+    display: none !important;
 }
 
-article
-{
-	border: none !important;
+article {
+    border: none !important;
 }
 
-div.vieworiginal a::after
-{
-	margin-left: 5px;
-	content: "("attr(href)")";
+/* Add URL after links */
+.vieworiginal a:after {
+    content: " (" attr(href) ")";
+}
+
+/* Add explanation after abbr */
+abbr[title]:after {
+    content: " (" attr(title) ")";
+}
+
+/* Change border on current pager item */
+.pagination span.current {
+    border-style: dashed;
 }
