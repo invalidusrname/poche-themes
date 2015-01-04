@@ -4,10 +4,10 @@ themes created by poche users
 
 ## list of themes
 
-* dark ([preview](https://raw.github.com/inthepoche/poche-themes/master/dark/screenshot.jpg))
-* dmagenta ([preview](https://raw.github.com/inthepoche/poche-themes/master/dmagenta/screenshot.jpg))
-* solarized ([preview](https://raw.github.com/inthepoche/poche-themes/master/solarized/screenshot.jpg))
-* solarized-dark ([preview](https://raw.github.com/inthepoche/poche-themes/master/solarized-dark/screenshot.jpg))
+* dark ([preview](https://raw.githubusercontent.com/inthepoche/poche-themes/master/dark/screenshot.jpg))
+* dmagenta ([preview](https://raw.githubusercontent.com/inthepoche/poche-themes/master/dmagenta/screenshot.jpg))
+* solarized ([preview](https://raw.githubusercontent.com/inthepoche/poche-themes/master/solarized/screenshot.jpg))
+* solarized-dark ([preview](https://raw.githubusercontent.com/inthepoche/poche-themes/master/solarized-dark/screenshot.jpg))
 
 ## installation
 Take a theme folder, by example, the dark one and copy / paste it in ./tpl folder of your poche. 
